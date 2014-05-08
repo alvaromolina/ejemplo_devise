@@ -1,4 +1,6 @@
 EjemploDevise::Application.routes.draw do
+
+  get 'posts/guardar' => 'posts#guardar'
   resources :posts
 
   devise_for :users
